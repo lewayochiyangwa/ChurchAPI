@@ -1,0 +1,40 @@
+DELIMITER //
+
+CREATE PROCEDURE InsertSermons(
+    IN p_id INT,
+    IN p_verse VARCHAR(255),
+    IN p_sermon_title VARCHAR(255),
+    IN p_description VARCHAR(255),
+    IN p_update INT,
+    IN p_insert INT,
+    IN p_delete INT
+)
+BEGIN
+    -- Update operation
+    IF p_update = 1 THEN
+        UPDATE sermons
+        SET
+            verse = p_verse,
+            sermon_title = p_sermon_title,
+            description = p_description
+        WHERE
+            id = p_id;
+    END IF;
+
+    -- Insert operation
+    IF p_insert = 1 THEN
+        INSERT INTO sermons (id, verse, sermon_title, description)
+        VALUES (p_id, p_verse, p_sermon_title, p_description);
+    END IF;
+
+    -- Delete operation
+    IF p_delete = 1 THEN
+        UPDATE sermons
+        SET
+            deleted = p_delete
+        WHERE
+            id = p_id;
+    END IF;
+END //
+
+DELIMITER ;
