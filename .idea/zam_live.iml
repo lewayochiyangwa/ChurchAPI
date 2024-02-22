@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/featherlight/src" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/fine-uploader/php-traditional-server" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/fine-uploader/placeholders" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/fine-uploader/templates" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/hs-megamenu/src" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/icon-awesome/css" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/icon-awesome/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/icon-hs/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/icon-line/css" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/icon-line/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/vendor/jquery-ui/themes" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/paynow/php-sdk" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

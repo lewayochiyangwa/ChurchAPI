@@ -1,0 +1,45 @@
+SELECT * FROM `events` WHERE 1DELIMITER //
+
+CREATE PROCEDURE InsertEventw(
+    IN p_id INT,
+    IN p_title VARCHAR(255),
+    IN p_timeFrom VARCHAR(255),
+    IN p_timeTo VARCHAR(255),
+    IN p_description VARCHAR(255),
+    IN p_location VARCHAR(255),
+    IN p_event_date DATE,
+    IN p_update INT,
+    IN p_insert INT,
+    IN p_delete INT
+)
+BEGIN
+    -- Update operation
+    IF p_update = 1 THEN
+        UPDATE events
+        SET
+            title = p_title,
+            timeFrom = p_timeFrom,
+            timeTo = p_timeTo,
+            description = p_description,
+            location = p_location,
+            event_date = p_event_date
+        WHERE
+            id = p_id;
+    END IF;
+
+    -- Insert operation
+    IF p_insert = 1 THEN
+        INSERT INTO events (id, title, timeFrom, timeTo, description, location, event_date)
+        VALUES (p_id, p_title, p_timeFrom, p_timeTo, p_description, p_location, p_event_date);
+    END IF;
+
+    -- Delete operation
+    IF p_delete = 1 THEN
+       UPDATE events
+        SET
+            deleted = p_delete
+        WHERE id = p_id;
+    END IF;
+END //
+
+DELIMITER ;

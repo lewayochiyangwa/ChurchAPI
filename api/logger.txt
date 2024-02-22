@@ -1,0 +1,18 @@
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('1','13000','2024-01-16 15:46:57.945624','mobile','https://www.paynow.co.zw/Interface/CheckPayment/?guid=a54842e7-0af9-4536-98f2-533e4b392348');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('1','1200','2024-01-16 15:52:10.595067','mobile','https://www.paynow.co.zw/Interface/CheckPayment/?guid=c6020764-ebc8-433c-9591-da7a0517cc55');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('v','5','jan 2022','v','v');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('example_type','100','2024-01-16','example_device','example_callback');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('2','2000','2024-01-16','chatbot','www');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('2','2000','2024-01-16','chatbot','wwdddw');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('4','1024',now(),'chatbot','{"status":null,"message":null,"data":null}');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('4','7000',now(),'chatbot','"https:\/\/www.paynow.co.zw\/Interface\/CheckPayment\/?guid=f6838761-12f1-4c3b-b08d-f12b1aa6806f"');
+INSERT INTO onations(type,amount,datez,device,callback_url) 
+                       VALUES ('4','3000',now(),'chatbot','"https:\/\/www.paynow.co.zw\/Interface\/CheckPayment\/?guid=fda0b84d-3417-411e-ac22-63dab6d176a7"');
